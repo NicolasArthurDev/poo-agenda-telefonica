@@ -60,9 +60,9 @@ classDiagram
         +toString(): String
     }
 
-    App --> Agenda
-    Agenda "1" --> "0..*" Contato
-    Contato "1" --> "0..*" ColecaoTelefone
-    Contato "1" --> "0..*" ColecaoEmail
+    App --* Agenda
+    Agenda "1" --* "0..*" Contato
+    Contato "1" --* "0..*" ColecaoTelefone
+    Contato "1" --* "0..*" ColecaoEmail
 
 ```
